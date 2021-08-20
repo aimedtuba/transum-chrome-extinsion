@@ -3,12 +3,17 @@
 features:
 
 -Auto Check
+
 Repeatidly checks your answers so you don't 
 have to push the check answer button yourself.
+
 -Auto Completes
+
 Tricks transum into thinking that 
 any answer you put in is correct.
+
 -Insert Answers (BETA)
+
 Literally just searches transum for the answers 
 and gives them to you, and them fills all them in.
 
