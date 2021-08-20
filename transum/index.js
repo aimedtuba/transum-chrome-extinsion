@@ -99,7 +99,7 @@
                     script.innerHTML = ` 
                         checkAnswers.toString().split("').val().toUpperCase()) == '").forEach(function(item,index){
                             if(index!=0){
-                                document.querySelectorAll('input[name=Guess'+index+']')[0].value=item.split("'")[0]
+                                document.querySelectorAll('input[name=Guess'+index+']')[0].value=eval(item.split(")")[0].replaceAll("'",''))
                             }
                         })
                     `
