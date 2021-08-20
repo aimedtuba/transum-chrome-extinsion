@@ -1,0 +1,21 @@
+{
+    "name":"transum",
+    "icons": { 
+        "16": "transum.png",
+        "48": "transum.png",
+       "128": "transum.png" 
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.transum.org/*"],
+          "js": ["index.js"]
+        }
+    ],
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+    ],
+    "manifest_version":2,
+    "version":"6.9.4.20"
+}
