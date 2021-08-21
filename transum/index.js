@@ -24,10 +24,13 @@ if(document.querySelectorAll('#Checkbutton')[0]){
             xhr.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200 || this.status == 302) {
                     console.log(this.responseText)
-                    if(this.responseText!='f'){
+                    if(this.responseText=='t'){
                         console.log('a')
                         document.getElementsByClassName('blacklist')[0].removeAttribute("disabled")
                         document.getElementsByClassName('blacklist')[1].removeAttribute("disabled")
+                    }
+                    if(this.responseText!='f'&&this.responseText!='t'){
+                        alert(this.responseText)
                     }
                 }
             };
